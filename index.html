@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
-    <meta charset="utf-8">
-    <title>麻辣烫烫</title>
-    <style type="text/css">
-    body {background: url(static/img/007.jpg) repeat-x center 0;}
-    .content {
-        background-color: rgba(0, 0, 3, 0.24);
-        color: white;
-        margin-top: 200px;
-        margin-left: 100px;
-        margin-right: 100px;
-        padding: 40px;
-        font-size: 3em;
-        text-align: center;
-    }
-    .footer {
-        text-align: center;
-        color: white;
-        font-size: 0.5em;
-        margin-top: 100px;
-    }
-    </style>
-  </head>
-  <body>
-  <div class="content">
-  <h1>用好食材，过好生活</h1>
-  </div>
-  <div class="footer">
-  <img src="static/img/logo.jpg" height="80" width="240">
-  <h1>&copy; 2014 聚福瑞餐饮有限责任公司</h1>
-  </div>
-  </body>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+            麻辣烫烫餐厅
+        </title>
+        <link rel="stylesheet" href="static/css/jquery.fullPage.css">
+        <script src="static/js/jquery-1.9.1.min.js">
+        </script>
+        <script src="static/js/jquery-ui.min.js">
+        </script>
+        <script src="static/js/jquery.fullPage.min.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    autoScrolling: true,
+                    sectionsColor: ['#fff'],
+                    anchors: ['page1']
+                });
+            });
+        </script>
+        <style>
+            .section { text-align: center; font: 3em "Microsoft Yahei"; color: #fff;}
+            .section1 { background: url(static/img/logo.png) no-repeat center; color: #000;} 
+        </style>
+    </head>
+    
+    <body>
+        <div id="fullpage">
+            <div class="section section1">
+            </div>
+        </div>
+    </body>
 </html>
